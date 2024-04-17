@@ -65,6 +65,11 @@ build {
     source      = "vminfo.json"
     destination = "/home/latchup/vminfo.json"
   }
+  
+  provisioner "file" {
+    source = "workshop.md"
+    destination = "/home/latchup/workshop.md"
+  }
 
   provisioner "shell" {
     env = {
