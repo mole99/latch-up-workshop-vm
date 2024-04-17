@@ -25,16 +25,15 @@ export SRC_DIR="$HOME/src"
 # Now go to work!
 # ---------------
 
-# Update Ubuntu/Xubuntu installation
+# Update Ubuntu installation
 # ----------------------------------
 sudo apt -qq update -y
 sudo apt -qq upgrade -y
 
-
 # Install all the packages available via apt
 # ------------------------------------------
 echo ">>>> Installing required (and useful) packages via APT"
-sudo apt -qq install -y git python3 python3-pip python3.10-venv \
+sudo apt -qq install -y git python3 python3-pip python3-venv python3-tk \
         build-essential automake autoconf gawk m4 flex bison \
         octave octave-signal octave-communications octave-control \
         xterm csh tcsh htop mc gedit vim vim-gtk3 kdiff3 \
@@ -45,6 +44,18 @@ sudo apt -qq install -y git python3 python3-pip python3.10-venv \
         libxpm4 libxpm-dev libgtk-3-dev libxaw7-dev libfftw3-dev \
         libreadline-dev libtool
 
+# Install volare
+pip3 install volare
+
+# Install the PDK
+volare enable 6d4d11780c40b20ee63cc98e645307a9bf2b2ab8 --pdk sky130
+
+# Install CACE
+pip3 install cace
+
+# Install examples
+git clone https://github.com/RTimothyEdwards/sky130_ef_ip__instramp.git $HOME/sky130_ef_ip__instramp
+git clone https://github.com/RTimothyEdwards/sky130_ef_ip__rdac3v_8bit.git $HOME/sky130_ef_ip__rdac3v_8bit
 
 # Install/update xschem
 # ---------------------
