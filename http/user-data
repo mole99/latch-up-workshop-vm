@@ -57,7 +57,7 @@ autoinstall:
     - systemctl stop ssh.service
     - systemctl stop ssh.socket
   late-commands:
-      - echo 'ttuser ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/ttuser
+      - echo 'latchup ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/latchup
       - |
         cat > /target/etc/systemd/network/20-dhcp.network << EOF
         [Match]
