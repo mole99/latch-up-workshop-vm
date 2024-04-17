@@ -54,5 +54,5 @@ jobs:
       - name: Upload VM image
         uses: actions/upload-artifact@v4
         with:
-          name: tt_analog_virtualbox_ova
+          name: latch-up-workshop-vm.ova
           path: output-latch-up-workshop-vm/latch-up-workshop-vm.ova
