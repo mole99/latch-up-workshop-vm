@@ -54,8 +54,8 @@ volare enable 6d4d11780c40b20ee63cc98e645307a9bf2b2ab8 --pdk sky130
 pip3 install cace
 
 # Install examples
-git clone https://github.com/RTimothyEdwards/sky130_ef_ip__instramp.git $HOME/sky130_ef_ip__instramp
-git clone https://github.com/RTimothyEdwards/sky130_ef_ip__rdac3v_8bit.git $HOME/sky130_ef_ip__rdac3v_8bit
+git clone https://github.com/RTimothyEdwards/sky130_ef_ip__instramp.git "$HOME/sky130_ef_ip__instramp"
+git clone https://github.com/RTimothyEdwards/sky130_ef_ip__rdac3v_8bit.git "$HOME/sky130_ef_ip__rdac3v_8bit"
 
 # Install/update xschem
 # ---------------------
