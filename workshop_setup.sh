@@ -45,7 +45,7 @@ sudo apt -qq install -y git python3 python3-pip python3-venv python3-tk \
         libreadline-dev libtool
 
 # Add /usr/local/bin to PATH
- export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Install volare
 pip3 install volare
