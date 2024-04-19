@@ -51,7 +51,7 @@ export PATH="$HOME/.local/bin:$PATH"
 pip3 install volare
 
 # Install the PDK
-volare enable 6d4d11780c40b20ee63cc98e645307a9bf2b2ab8 --pdk sky130
+volare enable 42cd15c469adc1d303ffca4a7d32c29a4564a737 --pdk sky130
 
 # Install CACE
 pip3 install cace
